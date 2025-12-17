@@ -1,0 +1,101 @@
+Age,Attrition,BusinessTravel,DailyRate,Department,DistanceFromHo
+41,Yes,Travel_Rarely,1102,Sales,1
+49,No,Travel_Frequentl,279,Research & Dev,8
+"37
+33","Yes
+No","Travel_Rarely
+Travel_Frequentl","1373
+1392","Research & Dev
+Research & Dev","2
+3"
+27,No,Travel_Rarely,591,Research & Dev,2
+32,No,Travel_Frequentl,1005,Research & Dev,2
+"59
+30","No
+No","Travel_Rarely
+Travel_Rarely","1324
+1358","Research & Dev
+Research & Dev","3
+24"
+38,No,Travel_Frequentl,216,Research & Dev,23
+36,No,Travel_Rarely,1299,Research & Dev,27
+"35
+29","No
+No","Travel_Rarely
+Travel_Rarely","809
+153","Research & Dev
+Research & Dev","16
+15"
+31,No,Travel_Rarely,670,Research & Dev,26
+34,No,Travel_Rarely,1346,Research & Dev,19
+"28
+29","Yes
+No","Travel_Rarely
+Travel_Rarely","103
+1389","Research & Dev
+Research & Dev","24
+21"
+32,No,Travel_Rarely,334,Research & Dev,5
+22,No,Non-Travel,1123,Research & Dev,16
+"53
+38","No
+No","Travel_Rarely
+Travel_Rarely","1219
+371","Sales
+Research & Dev","2
+2"
+24,No,Non-Travel,673,Research & Dev,11
+36,Yes,Travel_Rarely,1218,Sales,9
+"34
+21","No
+No","Travel_Rarely
+Travel_Rarely","419
+391","Research & Dev
+Research & Dev","7
+15"
+34,Yes,Travel_Rarely,699,Research & Dev,6
+53,No,Travel_Rarely,1282,Research & Dev,5
+"32
+42","Yes
+No","Travel_Frequentl
+Travel_Rarely","1125
+691","Research & Dev
+Sales","16
+8"
+44,No,Travel_Rarely,477,Research & Dev,7
+46,No,Travel_Rarely,705,Sales,2
+"33
+44","No
+No","Travel_Rarely
+Travel_Rarely","924
+1459","Research & Dev
+Research & Dev","2
+10"
+30,No,Travel_Rarely,125,Research & Dev,9
+39,Yes,Travel_Rarely,895,Sales,5
+"24
+43","Yes
+No","Travel_Rarely
+Travel_Rarely","813
+1273","Research & Dev
+Research & Dev","1
+2"
+50,Yes,Travel_Rarely,869,Sales,3
+35,No,Travel_Rarely,890,Sales,2
+"36
+33","No
+No","Travel_Rarely
+Travel_Frequentl","852
+1141","Research & Dev
+Sales","5
+1"
+35,No,Travel_Rarely,464,Research & Dev,4
+27,No,Travel_Rarely,1240,Research & Dev,2
+"26
+27","Yes
+No","Travel_Rarely
+Travel_Frequentl","1357
+994","Research & Dev
+Sales","25
+8"
+30,No,Travel_Frequentl,721,Research & Dev,1

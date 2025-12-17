@@ -1,0 +1,101 @@
+Age,Gender,Marital Status,Education Level,Employment Sta,Credit Utilization
+60,Male,Married,Master,Employed,0.22
+25,Male,Married,High School,Unemployed,0.2
+"30
+58","Female
+Female","Single
+Married","Master
+PhD","Employed
+Unemployed","0.22
+0.12"
+32,Male,Married,Bachelor,Self-Employed,0.99
+42,Male,Divorced,Master,Unemployed,0.94
+"44
+24","Female
+Male","Divorced
+Divorced","Bachelor
+Master","Unemployed
+Employed","0.32
+0.66"
+54,Female,Divorced,PhD,Unemployed,0.4
+60,Male,Divorced,PhD,Unemployed,0.06
+"27
+52","Female
+Male","Divorced
+Divorced","Master
+Master","Employed
+Unemployed","0.29
+0.51"
+58,Female,Single,High School,Employed,0.93
+51,Male,Divorced,Bachelor,Employed,0.66
+"54
+34","Male
+Male","Divorced
+Single","Master
+High School","Self-Employed
+Unemployed","1
+0.55"
+22,Female,Married,Bachelor,Self-Employed,0.67
+35,Female,Single,Bachelor,Employed,0.1
+"61
+31","Male
+Female","Married
+Single","PhD
+Bachelor","Unemployed
+Employed","0.34
+0.44"
+35,Male,Single,PhD,Self-Employed,0.21
+38,Female,Divorced,PhD,Employed,0.19
+"23
+58","Male
+Male","Divorced
+Divorced","PhD
+Bachelor","Unemployed
+Self-Employed","0.92
+0.12"
+62,Female,Single,Bachelor,Unemployed,0.72
+24,Male,Single,High School,Employed,0.54
+"38
+26","Male
+Male","Single
+Single","Master
+High School","Unemployed
+Employed","0.98
+0.74"
+60,Female,Divorced,PhD,Self-Employed,0.91
+28,Female,Married,PhD,Unemployed,0.71
+"43
+46","Male
+Male","Single
+Married","Bachelor
+Bachelor","Employed
+Employed","0.31
+0.88"
+35,Female,Married,High School,Self-Employed,0.87
+34,Male,Married,Bachelor,Self-Employed,0.33
+"41
+47","Male
+Male","Married
+Single","Master
+Bachelor","Employed
+Self-Employed","0.58
+0.04"
+62,Male,Single,PhD,Employed,0.95
+52,Female,Divorced,PhD,Self-Employed,0.4
+"31
+52","Female
+Female","Single
+Divorced","High School
+Bachelor","Self-Employed
+Unemployed","0.29
+0.08"
+34,Male,Married,High School,Employed,0.24
+64,Female,Single,PhD,Employed,0.15
+"53
+52","Female
+Female","Married
+Divorced","Bachelor
+PhD","Employed
+Employed","0.46
+0.74"
+60,Male,Single,PhD,Employed,0.71
