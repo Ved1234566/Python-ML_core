@@ -8,8 +8,8 @@ def get_connection():
     return mysql.connector.connect(
         host="localhost",
         user="root",
-        password="YOUR_MYSQL_PASSWORD",
-        database="student_db"
+        password="root",
+        database="School"
     )
 
 # ---------- Home Page ----------

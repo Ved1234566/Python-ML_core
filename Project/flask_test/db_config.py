@@ -5,5 +5,5 @@ def get_connection():
         host="localhost",
         user="root",
         password="root",
-        database="student_db"
+        database="School"
     )
