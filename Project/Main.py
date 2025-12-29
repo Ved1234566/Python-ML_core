@@ -1,7 +1,9 @@
-from db_config import get_connection
+import mysql.connector
 
-conn = get_connection()
-print("Database connected successfully")
-conn.close()
-
-
+def get_connection():
+    return mysql.connector.connect(
+        host="localhost",
+        user="root",          # or root if it works
+        password="root",   # your password
+        database="school"   # database with student table
+    )

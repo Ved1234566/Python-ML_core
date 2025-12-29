@@ -1,4 +1,3 @@
-# from db_config import get_connection
 import mysql.connector
 
 def get_connection():
@@ -8,4 +7,3 @@ def get_connection():
         password="root",
         database="student_db"
     )
-    

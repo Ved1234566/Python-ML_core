@@ -1,12 +1,23 @@
 from flask import Flask, render_template, request
-from db_config import get_connection
+import mysql.connector
 
 app = Flask(__name__)
 
+# ---------- MySQL Connection ----------
+def get_connection():
+    return mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="YOUR_MYSQL_PASSWORD",
+        database="student_db"
+    )
+
+# ---------- Home Page ----------
 @app.route('/')
 def home():
     return render_template('index.html')
 
+# ---------- Form Submit ----------
 @app.route('/submit', methods=['POST'])
 def submit():
     name = request.form['name']
@@ -26,7 +37,8 @@ def submit():
     cursor.close()
     conn.close()
 
-    return "Data inserted successfully!"
+    return "✅ Data inserted into MySQL successfully!"
 
+# ---------- Run App ----------
 if __name__ == '__main__':
     app.run(debug=True)
