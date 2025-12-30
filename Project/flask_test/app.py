@@ -1,5 +1,6 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 import mysql.connector
+from mysql.connector import Error
 
 app = Flask(__name__)
 
@@ -12,10 +13,19 @@ def get_connection():
         database="School"
     )
 
-# ---------- Home Page ----------
+# ---------- Home Page (FETCH DATA) ----------
 @app.route('/')
 def home():
-    return render_template('index.html')
+    conn = get_connection()
+    cursor = conn.cursor(dictionary=True)
+
+    cursor.execute("SELECT * FROM student")
+    students = cursor.fetchall()
+
+    cursor.close()
+    conn.close()
+
+    return render_template('index.html', students=students)
 
 # ---------- Form Submit ----------
 @app.route('/submit', methods=['POST'])
@@ -25,19 +35,28 @@ def submit():
     age = request.form['age']
     department = request.form['department']
 
-    conn = get_connection()
-    cursor = conn.cursor()
+    try:
+        conn = get_connection()
+        cursor = conn.cursor()
 
-    cursor.execute(
-        "INSERT INTO student (name, email, age, department) VALUES (%s, %s, %s, %s)",
-        (name, email, age, department)
-    )
+        cursor.execute(
+            "INSERT INTO student (name, email, age, department) VALUES (%s, %s, %s, %s)",
+            (name, email, age, department)
+        )
 
-    conn.commit()
-    cursor.close()
-    conn.close()
+        conn.commit()
 
-    return "✅ Data inserted into MySQL successfully!"
+    except Error as e:
+        if e.errno == 1062:
+            return "❌ This email already exists. Please use a different email."
+        else:
+            return f"❌ Database error: {e}"
+
+    finally:
+        cursor.close()
+        conn.close()
+
+    return redirect('/')
 
 # ---------- Run App ----------
 if __name__ == '__main__':
